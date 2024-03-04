@@ -4,19 +4,20 @@ This tiny package contains an interface and an array-based implementation of the
 
 ## Interface
 
-The Queue interface extends both Countable and IteratorAggragate interfaces
+The Queue interface extends both Countable and IteratorAggragate interfaces, so it's possible to use a queue object inside the count function and foreach loop.
 
 ### Methods
 
-| Method  | Description                                         |
-|---------|-----------------------------------------------------|
-| enqueue | Add a new element to the back of the queue.         |
-| dequeue | Remove and return the front element from the queue. |
-| back    | Return the back element of the queue.               |
-| front   | Return the front element of the queue.              |
-| isEmpty | Test whether the queue is empty.                    |
-| clear   | Remove all elements from the queue.                 |
-| count   | Return the number of elements of the queue.         |
+| Method      | Description                                         |
+|-------------|-----------------------------------------------------|
+| enqueue     | Add a new element to the back of the queue.         |
+| dequeue     | Remove and return the front element from the queue. |
+| back        | Return the back element of the queue.               |
+| front       | Return the front element of the queue.              |
+| isEmpty     | Test whether the queue is empty.                    |
+| clear       | Remove all elements from the queue.                 |
+| count       | Return the number of elements of the queue.         |
+| getIterator | Return a QueueIterator.                             |
 
 ## How to use it
 
